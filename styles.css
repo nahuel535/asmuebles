@@ -698,11 +698,38 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 640px) {
-  .hero { flex-direction: column; }
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
   .hero::after { display: none; }
-  .hero-half { flex: none; height: 50%; }
-  .hero-center { width: 88vw; padding: 26px 20px; }
-  .hero-center h1 { font-size: 1.5rem; }
+  .hero-half {
+    flex: none;
+    height: 38vh;
+    min-height: 180px;
+  }
+  .hero-label { display: none; }
+  .hero-center {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 32px 24px;
+    background: var(--dark);
+    border-top: 3px solid var(--red);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-center h1 { font-size: 1.5rem; line-height: 1.12; margin-bottom: 12px; }
+  .hero-eyebrow { font-size: 0.62rem; margin-bottom: 12px; }
+  .hero-sub { font-size: 0.85rem; line-height: 1.6; margin-bottom: 24px; }
+  .hero-sub br { display: none; }
+  .hero-center .btn { width: 100%; font-size: 0.78rem; padding: 14px; }
 
   .stat-item { padding: 8px 22px; }
   .stat-divider { display: none; }
@@ -755,62 +782,3 @@ a { text-decoration: none; color: inherit; }
   }
 }
 
-@media (max-width: 640px) {
-  .hero {
-    flex-direction: column;
-    min-height: auto;
-    height: auto;
-  }
-
-  .hero::after {
-    display: none;
-  }
-
-  .hero-half {
-    flex: none;
-    height: 34vh;
-    min-height: 220px;
-  }
-
-  .hero-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100vw - 32px);
-    max-width: 360px;
-    padding: 22px 18px;
-    background: rgba(0, 0, 0, 0.82);
-  }
-
-  .hero-eyebrow {
-    font-size: 0.58rem;
-    letter-spacing: 2.5px;
-    margin-bottom: 10px;
-  }
-
-  .hero-center h1 {
-    font-size: 1.35rem;
-    line-height: 1.08;
-    letter-spacing: 0.2px;
-    margin-bottom: 10px;
-    text-wrap: balance;
-  }
-
-  .hero-sub {
-    font-size: 0.78rem;
-    line-height: 1.45;
-    margin-bottom: 18px;
-  }
-
-  .hero-sub br {
-    display: none;
-  }
-
-  .hero-center .btn {
-    width: 100%;
-    padding: 13px 18px;
-    font-size: 0.72rem;
-    letter-spacing: 1px;
-  }
-}
