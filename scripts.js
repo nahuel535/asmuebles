@@ -4,7 +4,7 @@
 
 // Reemplazar con el número real (formato: 549 + código de área + número)
 // Ejemplo: '5493512345678'  (54=Argentina, 9=móvil, 351=Córdoba, 2345678=número)
-const WHATSAPP_NUMBER = 'COMPLETAR_NUMERO';
+const WHATSAPP_NUMBER = '5493517515354';
 
 /* ============================================================
    NAVBAR — scroll + mobile toggle
@@ -258,9 +258,22 @@ document.getElementById('contactForm').addEventListener('submit', e => {
 const waFloat = document.getElementById('waFloat');
 
 waFloat.addEventListener('click', () => {
-  const text = '¡Hola! Me gustaría consultar sobre una cocina.';
+  const text = '¡Hola! Me gustaría consultar sobre .';
   window.open(
     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,
     '_blank', 'noopener,noreferrer'
   );
+});
+
+const radios = document.querySelectorAll('input[name="tipo"]');
+const otroInput = document.getElementById('otro-input');
+
+radios.forEach(radio => {
+  radio.addEventListener('change', () => {
+    if (radio.value === "Otro" && radio.checked) {
+      otroInput.style.display = "block";
+    } else {
+      otroInput.style.display = "none";
+    }
+  });
 });
