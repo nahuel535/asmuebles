@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.brandsoftheworld.com)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:www.egger.com)",
+      "WebFetch(domain:getvectorlogo.com)",
+      "WebFetch(domain:seeklogo.com)",
+      "WebFetch(domain:www.faplaconline.com.ar)",
+      "WebFetch(domain:www.arauco.cl)",
+      "WebFetch(domain:www.arauco.com)",
+      "WebFetch(domain:arauco.com)",
+      "Bash(curl -I \"https://www.faplac.com.ar/home/medias/logo-faplac-blanco.png?context=bWFzdGVyfGltYWdlc3w1NTYzfGltYWdlL3BuZ3xhRE01TDJnME5DODRPREV4TURJeU1ESTBOek0wTDJ4dloyOHRabUZ3YkdGakxXSnNZVzVqYnk1d2JtY3xlNzEyMzFhNWMzZjE3MGYxMzNiYjQyZDk5MzYwZmQxNTcyOTQ4OGM3MTFiMWYzMWI0MTM2YWQzMzU2MmI0YjZl\")",
+      "Bash(curl -I \"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052011/faplac_logo_0.ai_.png?itok=54B7lYgQ\")",
+      "Bash(curl -I \"https://arauco.com/argentina/wp-content/uploads/sites/15/2017/07/logo-arauco-1.png\")",
+      "Bash(git --version)",
+      "Bash(gh --version)"
+    ]
+  }
+}

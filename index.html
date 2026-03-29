@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AS Muebles | Cocinas Llave en Mano — Córdoba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="img/logo.png" alt="AS Muebles"
+             onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
+        <span class="nav-logo-text" id="logo-text" style="display:none">AS <span class="red">MUEBLES</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto" class="nav-cta">Contactanos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-label="Inicio">
+    <div class="hero-half hero-left">
+      <img src="img/render.jpg" alt="Render 3D de cocina diseñada por AS Muebles" loading="eager">
+      <div class="hero-half-overlay" aria-hidden="true"></div>
+      <span class="hero-label" aria-hidden="true">El diseño</span>
+    </div>
+    <div class="hero-half hero-right">
+      <img src="img/foto-real.jpg" alt="Cocina terminada instalada por AS Muebles" loading="eager">
+      <div class="hero-half-overlay" aria-hidden="true"></div>
+      <span class="hero-label" aria-hidden="true">La realidad</span>
+    </div>
+    <div class="hero-center" data-anim="scale">
+      <p class="hero-eyebrow">Córdoba, Argentina</p>
+      <h1>Tu cocina lista,<br>sin preocuparte<br>por nada</h1>
+      <p class="hero-sub">Diseño, fabricación e instalación completa.<br>Un solo equipo, cero estrés.</p>
+      <a href="#contacto" class="btn btn-red">Quiero mi cocina</a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar" aria-label="Estadísticas">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-value">
+          <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+        </div>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-item">
+        <div class="stat-value">
+          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+        </div>
+        <span class="stat-label">Satisfacción garantizada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="section section-dark" id="problema">
+    <div class="container">
+      <p class="section-eyebrow" data-anim="up">El problema</p>
+      <h2 data-anim="up">Hacer una cocina puede ser un caos</h2>
+      <div class="problem-grid">
+        <div class="problem-item" data-anim="left">
+          <div class="problem-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2.5" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Múltiples proveedores</h3>
+            <p>Tenés que coordinar carpintero, electricista, plomero y albañil al mismo tiempo, sin garantías de que todo cuadre.</p>
+          </div>
+        </div>
+        <div class="problem-item" data-anim="up">
+          <div class="problem-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2.5" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Retrasos y demoras</h3>
+            <p>Cada proveedor tiene sus tiempos. Cuando uno falla, todo se paraliza y la obra se extiende semanas.</p>
+          </div>
+        </div>
+        <div class="problem-item" data-anim="right">
+          <div class="problem-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2.5" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Costos imprevistos</h3>
+            <p>Sin un plan unificado, terminás gastando mucho más de lo que habías presupuestado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAL -->
+  <section class="section section-light" id="servicios">
+    <div class="container">
+      <p class="section-eyebrow red-text" data-anim="up">La solución</p>
+      <h2 data-anim="up">Nosotros nos encargamos de todo</h2>
+      <p class="section-desc" data-anim="up">No somos solo carpinteros. Somos una empresa que gestiona el proceso completo de tu cocina, de principio a fin.</p>
+      <div class="features-grid">
+        <div class="feature-card" data-anim="up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3>Diseño personalizado</h3>
+          <p>Creamos el diseño ideal para tu espacio con renders 3D, adaptado a tus necesidades y estilo.</p>
+        </div>
+        <div class="feature-card" data-anim="up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3>Fabricación propia</h3>
+          <p>Producimos todo en nuestro taller, controlando calidad y plazos sin depender de terceros.</p>
+        </div>
+        <div class="feature-card" data-anim="up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Instalación completa</h3>
+          <p>Nuestro equipo instala muebles, molduras, zócalos y todos los detalles finales.</p>
+        </div>
+        <div class="feature-card" data-anim="up">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3>Conexiones de luz y agua</h3>
+          <p>Coordinamos electricidad y plomería para que tu cocina quede completamente funcional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <div class="brands-strip">
+    <div class="brands-container">
+      <span class="brands-label">Trabajamos con materiales de primera marca</span>
+      <div class="brands-list">
+        <div class="brand-item">
+          <img class="brand-logo"
+               src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052011/faplac_logo_0.ai_.png?itok=54B7lYgQ"
+               alt="Faplac"
+               loading="lazy">
+          <span class="brand-desc">Tableros y melaminas de alta resistencia</span>
+        </div>
+        <div class="brand-sep" aria-hidden="true"></div>
+        <div class="brand-item">
+          <img class="brand-logo"
+               src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Fritz_Egger_Logo.svg"
+               alt="Egger"
+               loading="lazy">
+          <span class="brand-desc">Superficies decorativas de origen europeo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCESO -->
+  <section class="section section-dark" id="proceso">
+    <div class="container">
+      <p class="section-eyebrow" data-anim="up">Cómo trabajamos</p>
+      <h2 data-anim="up">Cuatro pasos, una cocina perfecta</h2>
+      <div class="process-grid">
+        <div class="process-step" data-anim="up">
+          <div class="step-number" aria-hidden="true">01</div>
+          <h3>Análisis del espacio</h3>
+          <p>Visitamos tu hogar y medimos cada rincón para entender el potencial de tu cocina.</p>
+        </div>
+        <div class="process-step" data-anim="up">
+          <div class="step-number" aria-hidden="true">02</div>
+          <h3>Diseño a medida</h3>
+          <p>Creamos renders 3D para que veas el resultado antes de empezar. Sin sorpresas.</p>
+        </div>
+        <div class="process-step" data-anim="up">
+          <div class="step-number" aria-hidden="true">03</div>
+          <h3>Fabricación</h3>
+          <p>Producimos todos los muebles en nuestro taller con materiales de primera calidad.</p>
+        </div>
+        <div class="process-step" data-anim="up">
+          <div class="step-number" aria-hidden="true">04</div>
+          <h3>Instalación total</h3>
+          <p>Instalamos todo y dejamos tu cocina lista para usar, sin que muevas un dedo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section section-light" id="galeria">
+    <div class="container">
+      <p class="section-eyebrow red-text" data-anim="up">Nuestro trabajo</p>
+      <h2 data-anim="up">Cocinas que hablan por sí solas</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large" data-anim="scale" tabindex="0" role="button" aria-label="Ver imagen 1">
+          <img src="img/galeria-1.jpg" alt="Cocina moderna instalada por AS Muebles" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item" data-anim="scale" tabindex="0" role="button" aria-label="Ver imagen 2">
+          <img src="img/galeria-2.jpg" alt="Detalle de cocina AS Muebles" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item" data-anim="scale" tabindex="0" role="button" aria-label="Ver imagen 3">
+          <img src="img/galeria-3.jpg" alt="Cocina equipada por AS Muebles" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item" data-anim="scale" tabindex="0" role="button" aria-label="Ver imagen 4">
+          <img src="img/galeria-4.jpg" alt="Cocina a medida Córdoba" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item" data-anim="scale" tabindex="0" role="button" aria-label="Ver imagen 5">
+          <img src="img/galeria-5.jpg" alt="Diseño de cocina personalizado" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section section-dark" id="testimonios">
+    <div class="container">
+      <p class="section-eyebrow" data-anim="up">Lo que dicen nuestros clientes</p>
+      <h2 data-anim="up">Resultados que hablan</h2>
+      <div class="testimonials-grid">
+        <article class="testimonial-card" data-anim="up">
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote>"La atención fue impecable desde el primer día. Cumplieron cada detalle del diseño y la cocina quedó increíble."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">MG</div>
+            <div><strong>María G.</strong><span>Nueva Córdoba</span></div>
+          </div>
+        </article>
+        <article class="testimonial-card" data-anim="up">
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote>"Cumplieron todo lo que prometieron, en tiempo y forma. Recomiendo AS Muebles sin dudarlo."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">RL</div>
+            <div><strong>Roberto L.</strong><span>Cerro de las Rosas</span></div>
+          </div>
+        </article>
+        <article class="testimonial-card" data-anim="up">
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="#cc2200" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote>"La cocina quedó exactamente como la habíamos imaginado. El proceso fue ordenado y sin sorpresas. Una experiencia 10 puntos."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">FM</div>
+            <div><strong>Florencia M.</strong><span>Villa Belgrano</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + FORMULARIO WIZARD -->
+  <section class="section cta-section" id="contacto">
+    <div class="container cta-container">
+      <div class="cta-text" data-anim="left">
+        <p class="section-eyebrow">Asesoramiento sin costo</p>
+        <h2>Empezá hoy tu cocina ideal</h2>
+        <p class="cta-desc">Completá el formulario en 3 pasos y te respondemos por WhatsApp a la brevedad.</p>
+        <ul class="cta-benefits">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Consulta sin compromiso
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Presupuesto personalizado
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#cc2200" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Respuesta en menos de 24hs
+          </li>
+        </ul>
+      </div>
+
+      <div class="cta-form-wrap" data-anim="right">
+        <!-- Wizard steps indicator -->
+        <div class="wizard-header">
+          <div class="wizard-steps">
+            <div class="wizard-step active" data-step="1">
+              <span class="step-dot">1</span>
+              <span class="step-label">Tus datos</span>
+            </div>
+            <div class="wizard-connector" aria-hidden="true"></div>
+            <div class="wizard-step" data-step="2">
+              <span class="step-dot">2</span>
+              <span class="step-label">Tu proyecto</span>
+            </div>
+            <div class="wizard-connector" aria-hidden="true"></div>
+            <div class="wizard-step" data-step="3">
+              <span class="step-dot">3</span>
+              <span class="step-label">Confirmá</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" novalidate>
+
+          <!-- Panel 1 -->
+          <div class="wizard-panel active" id="panel-1">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name">
+              <span class="field-error" id="error-nombre">Por favor ingresá tu nombre</span>
+            </div>
+            <div class="form-group">
+              <label for="zona">Zona</label>
+              <input type="text" id="zona" name="zona" placeholder="Tu barrio o ciudad" required autocomplete="address-level2">
+              <span class="field-error" id="error-zona">Por favor ingresá tu zona</span>
+            </div>
+            <button type="button" class="btn btn-red btn-full" id="step1-next">
+              Siguiente
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+          <!-- Panel 2 -->
+          <div class="wizard-panel" id="panel-2">
+            <div class="form-group">
+              <label>Tipo de proyecto</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="tipo" value="Nueva cocina" checked>
+                  <span>Nueva cocina</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="tipo" value="Remodelación">
+                  <span>Remodelación</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tamanio">Tamaño aproximado</label>
+              <div class="select-wrap">
+                <select id="tamanio" name="tamanio">
+                  <option value="">Seleccioná una opción</option>
+                  <option value="Pequeña (hasta 6m²)">Pequeña (hasta 6m²)</option>
+                  <option value="Mediana (6 a 12m²)">Mediana (6 a 12m²)</option>
+                  <option value="Grande (más de 12m²)">Grande (más de 12m²)</option>
+                  <option value="No sé todavía">No sé todavía</option>
+                </select>
+                <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </div>
+            <div class="wizard-nav">
+              <button type="button" class="btn btn-outline" id="step2-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Atrás
+              </button>
+              <button type="button" class="btn btn-red" id="step2-next">
+                Siguiente
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Panel 3 -->
+          <div class="wizard-panel" id="panel-3">
+            <div class="wizard-summary-card" id="wizard-summary" aria-live="polite"></div>
+            <div class="form-group">
+              <label for="mensaje">Contanos tu idea <span class="optional">(opcional)</span></label>
+              <textarea id="mensaje" name="mensaje" placeholder="Describí brevemente tu cocina ideal..." rows="3"></textarea>
+            </div>
+            <div class="wizard-nav">
+              <button type="button" class="btn btn-outline" id="step3-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Atrás
+              </button>
+              <button type="submit" class="btn btn-red">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Enviar por WhatsApp
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">AS <span class="red">MUEBLES</span></span>
+        <p>Cocinas llave en mano en Córdoba, Argentina.</p>
+      </div>
+      <nav class="footer-links" aria-label="Links del footer">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-contact">
+        <p>Córdoba, Argentina</p>
+        <a href="#contacto" class="footer-cta-link">Pedí tu presupuesto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AS Muebles. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+      <p class="lightbox-counter" id="lightboxCounter"></p>
+    </div>
+  </div>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="wa-float" id="waFloat" aria-label="Consultar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span>¿Hablamos?</span>
+  </a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
